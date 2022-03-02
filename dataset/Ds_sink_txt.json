@@ -1,0 +1,24 @@
+{
+	"name": "Ds_sink_txt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1_txt",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "adf1.txt",
+				"folderPath": "output",
+				"container": "fsdemo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

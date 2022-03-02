@@ -1,0 +1,22 @@
+{
+	"name": "ds_source_txt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1_txt",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "adf1.txt",
+				"container": "fsdemo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
