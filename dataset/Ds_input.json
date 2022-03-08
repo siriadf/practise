@@ -1,0 +1,22 @@
+{
+	"name": "Ds_input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1_txt",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "input",
+				"container": "fsdemo1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
